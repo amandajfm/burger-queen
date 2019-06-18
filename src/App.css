@@ -49,6 +49,10 @@
   font-weight: bold;
 }
 
+.KitchenOrder{
+  width:30rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

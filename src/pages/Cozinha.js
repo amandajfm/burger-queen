@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import firebase from "../firebaseConfig";
 import withFirebaseAuth from 'react-with-firebase-auth';
 import { BrowserRouter as Router, Route, Redirect, Link } from 'react-router-dom';
@@ -27,13 +26,22 @@ class Cozinha extends React.Component {
     render() {
         return (
             <div>
-                <h1> AQUI É A COZINHA</h1>                
+                <h2>Cozinha - Pedidos</h2>                
                 <div>
                     {
                         this.state.order.map((item, index) => {
-                            console.log(item)
-                            return <p key={index}>{item.waiter} | {item.client}</p>
-                        })
+                            return (<div className="Margin Order KitchenOrder">
+                                <p key={index}>Garçon {item.waiter} | Cliente {item.client}</p>
+                                <p key={index}>Realizado em {item.hour}</p>
+                            
+                            {item.order.map((item, index) => {
+                                return  <p key={index}>{item.nome} - {item.quantity}</p>
+                                    
+                              })
+                            }
+                   
+                            </div>
+                        )})
                     }
                 </div>
                 <div className="Margin">

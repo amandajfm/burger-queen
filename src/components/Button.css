@@ -15,25 +15,10 @@
   padding:0.2rem;
 }
 
-.ExcluirItem{
+.ExcludeItem{
   width:7rem;
   padding:0;
   margin:0rem;
   font-size:1rem;
 }
-
-
-  /*Duvidas
-  COmo dar reset no state após enviar o pedido?
-  O q estou fazendo errado na cozinha ao pegar os dados do pedido?
-  O nome das classes realmente deve ser em caixa alta?
-
-  ? Erros e warnings que está apresentadno no arquivo atual?
-
-  ? Ver como separar cada pedido
- 
-  Ver sobre cloud functions e firebase hosting/deploy
-
-  Ver o q eh isso - Você pode adicionar a tela inicial como um aplicativo da web (ele tem um manifesto, ícones, ...) em iOS e Android
-  */
   

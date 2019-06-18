@@ -75,10 +75,6 @@ const menuLunch = [
         preco: 10
     },
     {
-        nome: "Batata Frita",
-        preco: 5
-    },
-    {
         nome: "Adicional de Queijo",
         preco: 1
     },
@@ -162,13 +158,16 @@ class Salao extends React.Component {
     }
 
     createNewOrder = () => {
+        const now = new Date
         const { client, order, waiter } = this.state;
         const newOrder = {
             client,
             order,
             waiter,
+            hour: now.getHours() + ":" + now.getMinutes(),
         }
         database.collection('Orders').add(newOrder)
+        .then(() => {this.setState({order: []})})
     }
 
     render() {
@@ -199,7 +198,7 @@ class Salao extends React.Component {
                             return <div key={index}>
                                 <p>{menuItem.nome} - {menuItem.preco * menuItem.quantity} -
                                     {menuItem.quantity}</p>
-                                <Button className="Button ExcluirItem" text="Excluir item" onClick={() => this.deleteClick(menuItem)}></Button>
+                                <Button className="Button ExcludeItem" text="Excluir item" onClick={() => this.deleteClick(menuItem)}></Button>
                             </div>
                         })
                     }
