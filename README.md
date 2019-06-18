@@ -13,15 +13,15 @@
 
 ## 1. Preâmbulo
 
-Com um projeto sob demanda, o desafio desta vez, foi atender ao pedido de um pequeno restaurante de hambúrgueres, com serviço 24 horas, que precisava de uma interface para tablets para manejo de todos os seus pedidos e conexão entre salão de clientes e cozinha.
+Com um projeto sob demanda, o desafio desta vez foi atender ao pedido de um pequeno restaurante de hambúrgueres, com serviço 24 horas, que precisava de uma interface para tablets para manejo de todos os seus pedidos e conexão entre salão de clientes e cozinha.
 
 ## 2. Resumo do Produto
 
-O produto foi desenvolvido em react e possibilita ao restaurante manter cadastros individuais de cada garçon e funcionário da cozinha que logam com suas senhas pessoais, permite ao garçon incluir e excluir itens do pedido dos clientes, visualizar o pedido completo, incluindo quantidade de itens, preço unitário e total e envio do pedido para a cozinha, bem como permite que a equipe da cozinha receba todos os pedidos enviados no salão para a preparação.
+O produto foi desenvolvido em react e possibilita ao restaurante manter cadastros individuais de cada garçom e funcionário da cozinha que logam com suas senhas pessoais, permite ao garçom incluir e excluir itens do pedido dos clientes, visualizar o pedido completo, incluindo quantidade de itens, preço unitário e total e envio do pedido para a cozinha, bem como permite que a equipe da cozinha receba todos os pedidos enviados no salão para a preparação.
 
 ## 3. Público Alvo
 
-O produto foi desenvolvido sobre demanda para um restaurante em específico, porém é completamente adaptável a diversos outros restaurantes e serviços de alimentação, como pizzarias, salgaderias, restaurantes a la carte, entre outros.
+O produto foi desenvolvido sob demanda para um restaurante em específico, porém é completamente adaptável a diversos outros restaurantes e serviços de alimentação, como pizzarias, salgaderias, restaurantes a la carte, entre outros.
  
 ## 4. Testes de Usabilidade
 
@@ -57,4 +57,5 @@ Caissa Martins Lima - Não tem como o cozinheiro não entender os pedidos, estã
 
 Na versão 1.0.0 o usuário pode se cadastrar indicando nome de usuário, e-mail, senha e área de trabalho (cozinha ou salão), logar em sua área após cadastro com seu e-mail e senha e visualizar sua área de pedidos. 
 Sendo o funcionário um garçom, ele pode anotar o nome do cliente, pode adicionar ou retirar itens do pedido em aberto do cliente, ver o resumo e o valor total do pedido e enviar o pedido para a cozinha com seu nome registrado.
+
 Na versão 2.0.0 foi implementada a área da cozinha, onde o usuário sendo funcionário da área da cozinha, pode ver os pedidos à medida que são feitos, os quais são apresentados com nome do cliente, nome do garçom, horário em que foi enviado, itens e quantidades requisitadas.
